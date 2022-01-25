@@ -8,5 +8,14 @@
         android:id="@+id/homeFragment"
         android:name="com.example.animeapp.view.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_animeDetailsFragment"
+            app:destination="@id/animeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeDetailsFragment"
+        android:name="com.example.animeapp.view.AnimeDetailsFragment"
+        android:label="fragment_anime_details"
+        tools:layout="@layout/fragment_anime_details" />
 </navigation>
