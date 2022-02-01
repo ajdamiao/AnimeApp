@@ -6,7 +6,6 @@ import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.animeapp.databinding.ActivityMainBinding
-import com.example.animeapp.databinding.FragmentHomeBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         binding.toolbarInclude.btnBack.setOnClickListener {
             navController.popBackStack()
         }
-
     }
 
     private fun setBackButtonVisibility() {

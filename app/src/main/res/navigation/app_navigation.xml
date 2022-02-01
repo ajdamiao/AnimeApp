@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigation"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.animeapp.view.HomeFragment"
@@ -18,4 +18,13 @@
         android:name="com.example.animeapp.view.AnimeDetailsFragment"
         android:label="fragment_anime_details"
         tools:layout="@layout/fragment_anime_details" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.animeapp.view.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

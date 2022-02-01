@@ -30,6 +30,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             when(response) {
                 is Anime -> {
                     setupAnimeRecyclerView(response)
+                    binding.progressBar.visibility = View.GONE
+                    binding.rviewAnime.visibility = View.VISIBLE
                 }
             }
         })
